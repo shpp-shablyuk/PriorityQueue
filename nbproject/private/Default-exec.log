@@ -1,0 +1,311 @@
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	console.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	direction.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	error.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	filelib.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	gevents.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	ginteractors.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	gmath.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	gobjects.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	gtimer.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	gtypes.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	gwindow.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	hashmap.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	lexicon.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	main.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	platform.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	point.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	random.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	simpio.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	sound.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	startup.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	strlib.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	thread.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	tplatform.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	g++
+	-c
+	-fvisibility-inlines-hidden
+	tokenscanner.cpp
+
+called: ar
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib
+	ar
+	cr
+	libStanfordCPPLib.a
+	console.o
+	direction.o
+	error.o
+	filelib.o
+	gevents.o
+	ginteractors.o
+	gmath.o
+	gobjects.o
+	gtimer.o
+	gtypes.o
+	gwindow.o
+	hashmap.o
+	lexicon.o
+	main.o
+	platform.o
+	point.o
+	random.o
+	simpio.o
+	sound.o
+	startup.o
+	strlib.o
+	thread.o
+	tplatform.o
+	tokenscanner.o
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)
+	g++
+	-c
+	-IStanfordCPPLib
+	-fvisibility-inlines-hidden
+	-g
+	pqueue-test.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)
+	g++
+	-c
+	-IStanfordCPPLib
+	-fvisibility-inlines-hidden
+	-g
+	pqueue-vector.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)
+	g++
+	-c
+	-IStanfordCPPLib
+	-fvisibility-inlines-hidden
+	-g
+	pqueue-linkedlist.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)
+	g++
+	-c
+	-IStanfordCPPLib
+	-fvisibility-inlines-hidden
+	-g
+	pqueue-doublylinkedlist.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)
+	g++
+	-c
+	-IStanfordCPPLib
+	-fvisibility-inlines-hidden
+	-g
+	pqueue-heap.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)
+	g++
+	-c
+	-IStanfordCPPLib
+	-fvisibility-inlines-hidden
+	-g
+	pqueue-extra.cpp
+
+called: g++
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)
+	g++
+	-o
+	PriorityQueue
+	-L.
+	pqueue-test.o
+	pqueue-vector.o
+	pqueue-linkedlist.o
+	pqueue-doublylinkedlist.o
+	pqueue-heap.o
+	pqueue-extra.o
+	-lStanfordCPPLib
+
+called: /usr/bin/ld
+	/home/bulldozer/Documents/shpp/Assignment5-linux (2)
+	/usr/bin/ld
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_x86_64
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib64/ld-linux-x86-64.so.2
+	-z
+	relro
+	-o
+	PriorityQueue
+	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o
+	-L.
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.8
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib
+	-L/lib/x86_64-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/x86_64-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..
+	pqueue-test.o
+	pqueue-vector.o
+	pqueue-linkedlist.o
+	pqueue-doublylinkedlist.o
+	pqueue-heap.o
+	pqueue-extra.o
+	-lStanfordCPPLib
+	-lstdc++
+	-lm
+	-lgcc_s
+	-lgcc
+	-lc
+	-lgcc_s
+	-lgcc
+	/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+

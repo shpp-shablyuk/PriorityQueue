@@ -1,0 +1,37 @@
+(cd StanfordCPPLib; make all)
+make[1]: Entering directory `/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib'
+g++ -c -fvisibility-inlines-hidden console.cpp
+g++ -c -fvisibility-inlines-hidden direction.cpp
+g++ -c -fvisibility-inlines-hidden error.cpp
+g++ -c -fvisibility-inlines-hidden filelib.cpp
+g++ -c -fvisibility-inlines-hidden gevents.cpp
+g++ -c -fvisibility-inlines-hidden ginteractors.cpp
+g++ -c -fvisibility-inlines-hidden gmath.cpp
+g++ -c -fvisibility-inlines-hidden gobjects.cpp
+g++ -c -fvisibility-inlines-hidden gtimer.cpp
+g++ -c -fvisibility-inlines-hidden gtypes.cpp
+g++ -c -fvisibility-inlines-hidden gwindow.cpp
+g++ -c -fvisibility-inlines-hidden hashmap.cpp
+g++ -c -fvisibility-inlines-hidden lexicon.cpp
+g++ -c -fvisibility-inlines-hidden main.cpp
+g++ -c -fvisibility-inlines-hidden platform.cpp
+g++ -c -fvisibility-inlines-hidden point.cpp
+g++ -c -fvisibility-inlines-hidden random.cpp
+g++ -c -fvisibility-inlines-hidden simpio.cpp
+g++ -c -fvisibility-inlines-hidden sound.cpp
+g++ -c -fvisibility-inlines-hidden startup.cpp
+g++ -c -fvisibility-inlines-hidden strlib.cpp
+g++ -c -fvisibility-inlines-hidden thread.cpp
+g++ -c -fvisibility-inlines-hidden tplatform.cpp
+g++ -c -fvisibility-inlines-hidden tokenscanner.cpp
+ar cr libStanfordCPPLib.a console.o direction.o error.o filelib.o gevents.o ginteractors.o gmath.o gobjects.o gtimer.o gtypes.o gwindow.o hashmap.o lexicon.o main.o platform.o point.o random.o simpio.o sound.o startup.o strlib.o thread.o tplatform.o tokenscanner.o
+ranlib libStanfordCPPLib.a
+make[1]: Leaving directory `/home/bulldozer/Documents/shpp/Assignment5-linux (2)/StanfordCPPLib'
+ln -s StanfordCPPLib/libStanfordCPPLib.a .
+g++ -c -IStanfordCPPLib -fvisibility-inlines-hidden -g pqueue-test.cpp
+g++ -c -IStanfordCPPLib -fvisibility-inlines-hidden -g pqueue-vector.cpp
+g++ -c -IStanfordCPPLib -fvisibility-inlines-hidden -g pqueue-linkedlist.cpp
+g++ -c -IStanfordCPPLib -fvisibility-inlines-hidden -g pqueue-doublylinkedlist.cpp
+g++ -c -IStanfordCPPLib -fvisibility-inlines-hidden -g pqueue-heap.cpp
+g++ -c -IStanfordCPPLib -fvisibility-inlines-hidden -g pqueue-extra.cpp
+g++ -o PriorityQueue -L. pqueue-test.o pqueue-vector.o pqueue-linkedlist.o pqueue-doublylinkedlist.o pqueue-heap.o pqueue-extra.o -lStanfordCPPLib
