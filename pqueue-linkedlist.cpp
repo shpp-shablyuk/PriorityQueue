@@ -10,7 +10,8 @@
 
 LinkedListPriorityQueue::LinkedListPriorityQueue() {
     qSize = 0;
-//    head->value;
+    head = new List;
+//    head->next  = NULL;
 }
 
 LinkedListPriorityQueue::~LinkedListPriorityQueue() {
@@ -26,25 +27,19 @@ bool LinkedListPriorityQueue::isEmpty() {
 }
 
 void LinkedListPriorityQueue::enqueue(string value) {
-    if (head->next == NULL) {
-        insertAt(head, value);
-        return;
-    }
-    
-    for (List* item = head->next; item != NULL; item = item->next) {
+    for (List* item = head; item != NULL; item = item->next) {
         if (item->next == NULL || item->next->value > value) {
             insertAt(item, value);
-            continue;
+            break;
         }
-    }
-    
+    }    
   
-    qSize++;
+    qSize++;    
 }
 
 string LinkedListPriorityQueue::peek() {     
     if (head->next == NULL) {
-        throw ErrorException("empty !!!");
+        throw ErrorException("empty!");
     } 
     
     return head->next->value;
@@ -52,7 +47,7 @@ string LinkedListPriorityQueue::peek() {
 
 string LinkedListPriorityQueue::dequeueMin() {
     if (head->next == NULL) {
-        throw ErrorException("empty !!!");
+        throw ErrorException("empty!");
     } 
     
     string result = head->next->value;
