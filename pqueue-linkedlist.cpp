@@ -11,7 +11,6 @@
 LinkedListPriorityQueue::LinkedListPriorityQueue() {
     qSize = 0;
     head = new List;
-//    head->next  = NULL;
 }
 
 LinkedListPriorityQueue::~LinkedListPriorityQueue() {

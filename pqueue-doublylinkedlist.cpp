@@ -9,38 +9,90 @@
 #include "error.h"
 
 DoublyLinkedListPriorityQueue::DoublyLinkedListPriorityQueue() {
-	// TODO: Fill this in!
 }
 
 DoublyLinkedListPriorityQueue::~DoublyLinkedListPriorityQueue() {
-	// TODO: Fill this in!
+	// TODO: delete LinkedList
 }
 
 int DoublyLinkedListPriorityQueue::size() {
-	// TODO: Fill this in!
-	
-	return 0;
+    return qSize;
 }
 
 bool DoublyLinkedListPriorityQueue::isEmpty() {
-	// TODO: Fill this in!
-	
-	return true;
+    return qSize == 0;
 }
 
 void DoublyLinkedListPriorityQueue::enqueue(string value) {
-	// TODO: Fill this in!
+    Node* newNode = new Node;
+    newNode->value = value;
+    
+    if (head == NULL) {
+        head = newNode;
+    } else {
+        newNode->next = head;
+        head = newNode;
+        
+        head->next->prev = head;
+    }    
+      
+    qSize++;       
 }
 
 string DoublyLinkedListPriorityQueue::peek() {
-	// TODO: Fill this in!
-	
-	return "";
+    if (head == NULL) {
+        throw ErrorException("empty!");
+    }  
+    
+    Node* minNode = findMinNode();
+    return minNode->value;
 }
 
 string DoublyLinkedListPriorityQueue::dequeueMin() {
-	// TODO: Fill this in!
-	
-	return "";
+    if (head == NULL) {
+        throw ErrorException("empty!");
+    }
+    
+    Node* minNode = findMinNode();    
+    string value = minNode->value;
+    
+    popNode(minNode);
+
+    qSize--;    
+    
+    return value;
+}
+
+void DoublyLinkedListPriorityQueue::popNode(Node* node) {    
+    if (node == head) {
+        if (head->next == NULL) {
+            head = NULL;
+        } else {
+            head = head->next;
+            head->prev = NULL;
+        }
+    } else {
+        node->prev->next = node->next;
+        if (node->next != NULL) {
+            node->next->prev = node->prev;
+        }
+    }
+    
+    delete node; 
+}
+
+Node* DoublyLinkedListPriorityQueue::findMinNode() {
+    if (qSize == 1) {
+        return head;
+    }
+    
+    Node* min = head;
+    for(Node* item = head->next; item != NULL; item = item->next) {
+        if (min->value > item->value) {
+            min = item;
+        }
+    }    
+    
+    return min;
 }
 

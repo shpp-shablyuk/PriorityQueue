@@ -10,6 +10,12 @@
 #include <string>
 using namespace std;
 
+struct Node {
+    string value;
+    Node* prev = NULL;
+    Node* next = NULL;
+};
+
 /* A class representing a priority queue backed by an unsorted,
  * doubly-linked list.
  */
@@ -44,6 +50,13 @@ private:
 	// TODO: Fill this in with the implementation of your doubly-linked list
 	// priority queue.  You can add any fields, types, or methods that you
 	// wish.
+    
+    int qSize = 0;
+    Node* head = NULL;
+    
+    Node* findMinNode();
+    
+    void popNode(Node* node);
 };
 
 #endif
